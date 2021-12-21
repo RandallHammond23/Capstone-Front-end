@@ -13,16 +13,5 @@ ReactDOM.render(
   </Router>,
   document.getElementById('root')
 );
-const loader = new Loader({
-  apiKey: "AIzaSyAehAolPCldqtw_vLbNNneVjfPXvpWX_Bg",
-  version: "weekly",
-  
-});
 
-loader.load().then(() => {
-  const map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: -34.397, lng: 150.644 },
-    zoom: 8,
-  });
-});
 
