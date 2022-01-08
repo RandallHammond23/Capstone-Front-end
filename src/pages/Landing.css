@@ -1,0 +1,23 @@
+body{
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;    
+    display: grid;
+    place-content: center;
+    color: black;
+}
+
+.box{
+    border: 2px, black, solid;
+    width: 500px;
+    height: 500px;
+    color: black;
+    border-radius: 4px;
+    line-height: 25px;
+}
+
+.postText{
+    color: black;
+    text-align: center;
+    
+}

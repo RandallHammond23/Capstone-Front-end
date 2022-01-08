@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-
-
+import ImgMediaCard from '../components/CreatePost';
+import Profile from "./Profile"
 
 export default function Home () {
   
@@ -9,6 +9,8 @@ export default function Home () {
     
       <div>
  Welcome back 
+ <Profile/>
+ <ImgMediaCard />
       </div>
          
       

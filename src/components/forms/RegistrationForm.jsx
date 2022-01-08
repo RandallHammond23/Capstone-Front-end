@@ -27,6 +27,7 @@ export default function RegistrationForm(props) {
       lastName: lastName,
       email: userEmail,
       password: userPassword,
+      // image: file
     };
     axios
       .post(api, user)
@@ -42,48 +43,48 @@ export default function RegistrationForm(props) {
   };
 
   return (
-    <div class="container">
+    <div className="container">
       <form onSubmit={(e)=>handleSubmit(e)}>
-        <div class="col-md-6">
-          <div class="col-12">
-            <label for="inputFirstName" class="form-label">
+        <div className="col-md-6">
+          <div className="col-12">
+            <label htmlFor="inputFirstName" className="form-label">
               FirstName
             </label>
             <input
               type="text"
               onChange={(e)=>setFirstName(e.target.value)} name="firstName" value={firstName}
-              class="form-control"
+              className="form-control"
               id="inputFirstName"
               placeholder="John...."
             />
           </div>
-          <div class="col-12">
-            <label for="inputLastName" class="form-label">
+          <div className="col-12">
+            <label htmlFor="inputLastName" className="form-label">
               LastName
             </label>
             <input
               type="text"
               onChange={(e)=>setLastName(e.target.value)} name="lastName" value={lastName}
-              class="form-control"
+              className="form-control"
               id="inputLastName"
               placeholder="Johnson....."
             />
           </div>
 
-          <label for="inputEmail4" class="form-label">
+          <label htmlFor="inputEmail4" className="form-label">
             Email
           </label>
-          <input type="email" onChange={(e)=>setUserEmail(e.target.value)} name="email" value={userEmail} class="form-control" id="inputEmail4" />
+          <input type="email" onChange={(e)=>setUserEmail(e.target.value)} name="email" value={userEmail} className="form-control" id="inputEmail4" />
         </div>
-        <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">
+        <div className="col-md-6">
+          <label htmlFor="inputPassword4" className="form-label">
             Password
           </label>
-          <input type="password" onChange={(e)=>setUserPassword(e.target.value)} name="password" value={userPassword} class="form-control" id="inputPassword4" />
+          <input type="password" onChange={(e)=>setUserPassword(e.target.value)} name="password" value={userPassword} className="form-control" id="inputPassword4" />
         </div>
-
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">
+      
+        <div className="col-12">
+          <button type="submit" className="btn btn-primary">
             Create Account
           </button>
         </div>

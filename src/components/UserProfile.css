@@ -1,0 +1,6 @@
+.userProfilePosts{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    border: solid, black, 2px;
+}

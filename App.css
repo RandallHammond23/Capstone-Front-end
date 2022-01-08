@@ -1,3 +1,7 @@
 .App{
     background-color: black;
 }
+
+#map{
+    height: 60vh;
+}
